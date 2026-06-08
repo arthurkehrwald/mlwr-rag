@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="220dcb94-91d5-4551-a53b-ce45d298b9fc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/mlwr-rag.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/2025-09-24-BATIN_Info_Erstsemester.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/BaTIN_Aushang_FAQs.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rag.ipynb" afterDir="false" />
+    <list default="true" id="220dcb94-91d5-4551-a53b-ce45d298b9fc" name="Changes" comment="Example solution from ILU">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rag.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/rag.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uv.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uv.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +32,65 @@
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0017961777444662" />
+      <entry key="MS500" value="1.4972231018276665" />
+      <entry key="S2" value="3.5517107099264416" />
+      <entry key="S5" value="5.383338361857803" />
+      <entry key="S10" value="7.274504021489" />
+      <entry key="S30" value="12.34059026956882" />
+      <entry key="S60" value="15.377994807559418" />
+      <entry key="M2" value="17.44359001560158" />
+      <entry key="M5" value="18.911130380113047" />
+      <entry key="M10" value="19.443830088551657" />
+      <entry key="M15" value="19.626558980000002" />
+      <entry key="M30" value="19.811935369617775" />
+      <entry key="H1" value="19.905629083385982" />
+      <entry key="H2" value="19.952729567722226" />
+      <entry key="H4" value="19.976343499778284" />
+      <entry key="D1" value="19.996054290388837" />
+      <entry key="W1" value="19.99943625467398" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9880156578057022" />
+      <entry key="MS500" value="1.493317704238026" />
+      <entry key="S2" value="3.54933082709081" />
+      <entry key="S5" value="5.3818537455705915" />
+      <entry key="S10" value="7.273359795441389" />
+      <entry key="S30" value="12.339623254591805" />
+      <entry key="S60" value="15.377300899145439" />
+      <entry key="M2" value="17.4431673661276" />
+      <entry key="M5" value="18.91093916921918" />
+      <entry key="M10" value="19.44373040493521" />
+      <entry key="M15" value="19.626491587199254" />
+      <entry key="M30" value="19.81190119676746" />
+      <entry key="H1" value="19.90561187634165" />
+      <entry key="H2" value="19.95272093385504" />
+      <entry key="H4" value="19.97633917523454" />
+      <entry key="D1" value="19.996053568572545" />
+      <entry key="W1" value="19.99943615153142" />
+    </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -90,6 +142,15 @@
       <option name="presentableId" value="Default" />
       <updated>1780920745449</updated>
     </task>
+    <task id="LOCAL-00001" summary="Example solution from ILU">
+      <option name="closed" value="true" />
+      <created>1780922875101</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1780922875101</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,5 +158,9 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="pyproject.toml" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Example solution from ILU" />
+    <option name="LAST_COMMIT_MESSAGE" value="Example solution from ILU" />
   </component>
 </project>

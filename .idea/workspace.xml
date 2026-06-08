@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="220dcb94-91d5-4551-a53b-ce45d298b9fc" name="Changes" comment="Example solution from ILU">
+    <list default="true" id="220dcb94-91d5-4551-a53b-ce45d298b9fc" name="Changes" comment="Rewrite">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rag.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/rag.ipynb" afterDir="false" />
@@ -16,13 +17,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="13" />
+    <option name="cachedIndexableFilesCount" value="15" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -35,61 +37,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0017961777444662" />
-      <entry key="MS500" value="1.4972231018276665" />
-      <entry key="S2" value="3.5517107099264416" />
-      <entry key="S5" value="5.383338361857803" />
-      <entry key="S10" value="7.274504021489" />
-      <entry key="S30" value="12.34059026956882" />
-      <entry key="S60" value="15.377994807559418" />
-      <entry key="M2" value="17.44359001560158" />
-      <entry key="M5" value="18.911130380113047" />
-      <entry key="M10" value="19.443830088551657" />
-      <entry key="M15" value="19.626558980000002" />
-      <entry key="M30" value="19.811935369617775" />
-      <entry key="H1" value="19.905629083385982" />
-      <entry key="H2" value="19.952729567722226" />
-      <entry key="H4" value="19.976343499778284" />
-      <entry key="D1" value="19.996054290388837" />
-      <entry key="W1" value="19.99943625467398" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000000000346563" />
+      <entry key="S5" value="1.0000991460439486" />
+      <entry key="S10" value="1.0141250806312503" />
+      <entry key="S30" value="1.4426492608622672" />
+      <entry key="S60" value="2.7907609037733163" />
+      <entry key="M2" value="8.877310481995778" />
+      <entry key="M5" value="34.30980872309528" />
+      <entry key="M10" value="69.35498304352541" />
+      <entry key="M15" value="97.69834048111404" />
+      <entry key="M30" value="156.10671617019608" />
+      <entry key="H1" value="215.8650479924412" />
+      <entry key="H2" value="290.307380352243" />
+      <entry key="H4" value="397.31268640020926" />
+      <entry key="D1" value="618.3544915589815" />
+      <entry key="W1" value="680.6245629711019" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
       <entry key="S2" value="0.0" />
       <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="0.0" />
-      <entry key="M2" value="0.0" />
-      <entry key="M5" value="0.0" />
-      <entry key="M10" value="0.0" />
-      <entry key="M15" value="0.0" />
-      <entry key="M30" value="0.0" />
-      <entry key="H1" value="0.0" />
-      <entry key="H2" value="0.0" />
-      <entry key="H4" value="0.0" />
-      <entry key="D1" value="0.0" />
-      <entry key="W1" value="0.0" />
+      <entry key="S10" value="3.4561107394244706E-226" />
+      <entry key="S30" value="7.017717525549612E-76" />
+      <entry key="S60" value="2.649097492647183E-38" />
+      <entry key="M2" value="1.6276048330744037E-19" />
+      <entry key="M5" value="3.052246386952727E-8" />
+      <entry key="M10" value="1.7470694819685245E-4" />
+      <entry key="M15" value="0.0031256403131912215" />
+      <entry key="M30" value="0.057781180134921686" />
+      <entry key="H1" value="0.3730953140668459" />
+      <entry key="H2" value="1.6978360827425063" />
+      <entry key="H4" value="4.337694433116306" />
+      <entry key="D1" value="10.086758612981718" />
+      <entry key="W1" value="11.704939514534724" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9880156578057022" />
-      <entry key="MS500" value="1.493317704238026" />
-      <entry key="S2" value="3.54933082709081" />
-      <entry key="S5" value="5.3818537455705915" />
-      <entry key="S10" value="7.273359795441389" />
-      <entry key="S30" value="12.339623254591805" />
-      <entry key="S60" value="15.377300899145439" />
-      <entry key="M2" value="17.4431673661276" />
-      <entry key="M5" value="18.91093916921918" />
-      <entry key="M10" value="19.44373040493521" />
-      <entry key="M15" value="19.626491587199254" />
-      <entry key="M30" value="19.81190119676746" />
-      <entry key="H1" value="19.90561187634165" />
-      <entry key="H2" value="19.95272093385504" />
-      <entry key="H4" value="19.97633917523454" />
-      <entry key="D1" value="19.996053568572545" />
-      <entry key="W1" value="19.99943615153142" />
+      <entry key="MS100" value="0.9726549474122855" />
+      <entry key="MS500" value="0.9944701686732144" />
+      <entry key="S2" value="0.9986146661356372" />
+      <entry key="S5" value="0.9995447270533305" />
+      <entry key="S10" value="1.0138439475518193" />
+      <entry key="S30" value="1.4425171089708932" />
+      <entry key="S60" value="2.790634200532859" />
+      <entry key="M2" value="8.87709053976518" />
+      <entry key="M5" value="34.30946331497865" />
+      <entry key="M10" value="69.35477126985526" />
+      <entry key="M15" value="97.70092801156704" />
+      <entry key="M30" value="156.1635199494063" />
+      <entry key="H1" value="216.2367934367281" />
+      <entry key="H2" value="292.00324869736096" />
+      <entry key="H4" value="401.6481907466348" />
+      <entry key="D1" value="628.4404580971341" />
+      <entry key="W1" value="692.3293723276461" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -150,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780922875101</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Rewrite">
+      <option name="closed" value="true" />
+      <created>1780923627974</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1780923627974</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,8 +169,29 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="pyproject.toml" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Example solution from ILU" />
-    <option name="LAST_COMMIT_MESSAGE" value="Example solution from ILU" />
+    <MESSAGE value="Rewrite" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rewrite" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="jupyter-exception">
+          <properties exception="BaseException" />
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

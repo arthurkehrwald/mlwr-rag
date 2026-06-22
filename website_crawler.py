@@ -243,5 +243,5 @@ class WebsiteCrawler:
     def _clean_text(text: str) -> str:
         """Reduziert Layout-Whitespace, damit Embeddings weniger Rauschen enthalten."""
         text = re.sub(r"[ \t]+", " ", text)
-        text = re.sub(r"\n{3,}", "\n\n", text)
+        text = re.sub(r'\n\s*\n+', '\n', text)
         return text.strip()

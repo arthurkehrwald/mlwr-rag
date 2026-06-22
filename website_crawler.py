@@ -23,7 +23,21 @@ class _CleanHTMLTextExtractor(HTMLParser):
 
     # Diese Bereiche enthalten meistens Navigation, Layout oder Code statt
     # fachlichem Inhalt und wuerden die Embeddings unnoetig verrauschen.
-    SKIP_TAGS = {"script", "style", "noscript", "svg", "nav", "footer", "header", "aside"}
+    SKIP_TAGS = {
+        "script",
+        "style",
+        "noscript",
+        "svg",
+        "nav",
+        "footer",
+        "header",
+        "aside",
+        "form",
+        "button",
+        "input",
+        "select",
+        "option",
+    }
     BLOCK_TAGS = {
         "p",
         "br",
@@ -96,6 +110,37 @@ class _CleanHTMLTextExtractor(HTMLParser):
 class WebsiteCrawler:
     """Crawlt Webseiten und gibt sie als LangChain-Documents zurueck."""
 
+    IRRELEVANT_LINK_PATTERNS = (
+        "/kontakt",
+        "/impressum",
+        "/login",
+        "/register",
+        "/registrieren",
+        "/sitemap",
+        "/suche",
+        "/search",
+        "/faq",
+        "/datenschutz",
+        "/privacy",
+        "/agb",
+        "/terms",
+        "/newsletter",
+        "/forum",
+    )
+    MIN_TEXT_LENGTH = 300
+    RELEVANT_KEYWORDS = {
+        "studiengang",
+        "semester",
+        "modul",
+        "prüfung",
+        "studium",
+        "lehrveranstaltung",
+        "information",
+        "curriculum",
+        "lehrplan",
+        "prüfungsordnung",
+    }
+
     def __init__(
         self,
         *,
@@ -159,7 +204,7 @@ class WebsiteCrawler:
             page_text = self._clean_text(" ".join(extractor.parts))
             page_title = self._clean_text(" ".join(extractor.title_parts))
 
-            if page_text:
+            if self._is_relevant_text(page_text):
                 website_docs.append(
                     Document(
                         page_content=page_text,
@@ -167,6 +212,8 @@ class WebsiteCrawler:
                     )
                 )
                 print(f"Geladen: {url}")
+            else:
+                print(f"Uebersprungen, nicht relevant genug: {url}")
 
             if depth < self.max_depth:
                 self._append_next_links(queue, extractor.links, visited, allowed_domains, depth)
@@ -175,6 +222,17 @@ class WebsiteCrawler:
             time.sleep(self.delay_seconds)
 
         return website_docs
+
+    def _is_irrelevant_link(self, url: str) -> bool:
+        lower = url.lower()
+        return any(pattern in lower for pattern in self.IRRELEVANT_LINK_PATTERNS)
+
+    def _is_relevant_text(self, text: str) -> bool:
+        if len(text) < self.MIN_TEXT_LENGTH:
+            return False
+
+        lower = text.lower()
+        return any(keyword in lower for keyword in self.RELEVANT_KEYWORDS)
 
     def _append_next_links(
         self,
@@ -190,6 +248,8 @@ class WebsiteCrawler:
             if not normalized_link or normalized_link in visited:
                 continue
             if self.same_domain_only and not self._same_domain(normalized_link, allowed_domains):
+                continue
+            if self._is_irrelevant_link(normalized_link):
                 continue
             queue.append((normalized_link, depth + 1))
 
